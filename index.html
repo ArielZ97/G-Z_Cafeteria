@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cafeteria G & Z </title>
+    <link rel="stylesheet" href="Style.css">
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        text-align: center;
+      }
+      h1 {
+        font-size: 36px;
+        margin-top: 50px;
+      }
+      h2 {
+        font-size: 24px;
+        margin-top: 20px;
+      }
+      .box {
+        display: inline-block;
+        margin: 50px;
+        padding: 20px;
+        border: 1px solid #ccc;
+        cursor: pointer;
+      }
+    </style>
+
+</head>
+<body>
+  <h1>Cafeteria G & Z</h1>
+  <h2>Bienvenidos nuestra Cafeteria </h2>
+  <div class="box" onclick="openWindow('products')">
+    PRODUCTOS
+  </div>
+  <div class="box" onclick="openWindow('promos')">
+    PROMOS Y MAS
+  </div>
+
+  <script>
+    function openWindow(windowName) {
+      var windowContent = "";
+      if (windowName == "products") {
+        windowContent = "Bienvenidos a Productos";
+      } else if (windowName == "promos") {
+        windowContent = "Bienvenidos a Promos ";
+      }
+      var windowFeatures = "width=500,height=500,scrollbars=yes,resizable=yes";
+      var newWindow = window.open(windowName, newWindow, windowFeatures);
+      newWindow.document.write("<h1>" + windowContent + "</h1>");
+    }
+    
+  </script>
+  <footer>
+    <p>&copy; @gyzcafeteria.</p>
+    <p>&copy; Numero: 2664838679.</p>
+</footer>
+</body>
+</html>
+
+
