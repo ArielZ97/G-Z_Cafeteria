@@ -1,41 +1,9 @@
-// Obtener los elementos de los botones y las ventanas modales
-const productosBtn = document.getElementById("productosBtn");
-const promosBtn = document.getElementById("promosBtn");
-const productosModal = document.getElementById("productosModal");
-const promosModal = document.getElementById("promosModal");
-const productosClose = document.getElementById("productosClose");
-const promosClose = document.getElementById("promosClose");
+const socialMediaLinks = document.querySelectorAll('#social-media-links a');
 
-// Mostrar la ventana modal de PRODUCTOS al hacer clic en el botón "PRODUCTOS"
-productosBtn.addEventListener("click", () => {
-  productosModal.style.display = "block";
-});
+// Replace the href attributes with your actual social media links
+socialMediaLinks[0].href = 'https://www.facebook.com/your-page';
+socialMediaLinks[1].href = 'https://www.twitter.com/your-handle';
+socialMediaLinks[2].href = 'https://www.instagram.com/your-handle';
 
-// Mostrar la ventana modal de PROMOS Y MAS al hacer clic en el botón "PROMOS Y MAS"
-promosBtn.addEventListener("click", () => {
-  promosModal.style.display = "block";
-});
 
-// Cerrar la ventana modal de PRODUCTOS al hacer clic en la "X" o fuera de la ventana
-productosClose.addEventListener("click", () => {
-  productosModal.style.display = "none";
-});
 
-// Cerrar la ventana modal de PROMOS Y MAS al hacer clic en la "X" o fuera de la ventana
-promosClose.addEventListener("click", () => {
-  promosModal.style.display = "none";
-});
-
-// Cerrar la ventana modal de PRODUCTOS al hacer clic fuera de la ventana
-window.addEventListener("click", (event) => {
-  if (event.target === productosModal) {
-    productosModal.style.display = "none";
-  }
-});
-
-// Cerrar la ventana modal de PROMOS Y MAS al hacer clic fuera de la ventana
-window.addEventListener("click", (event) => {
-  if (event.target === promosModal) {
-    promosModal.style.display = "none";
-  }
-});

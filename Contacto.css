@@ -1,0 +1,117 @@
+body {
+  background-image: url('Imagenes/fondo.png');
+  background-size: cover;
+  font-family: Arial, sans-serif;
+  margin: 0px;
+  padding: 0px;
+}
+.black-header {
+  background-color: rgb(24, 27, 25);
+  padding: 20px;
+}
+.content {
+    text-align: center;
+    padding: 50px;
+    color: white;
+  }
+.black-header nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  
+  
+  
+  header {
+    background-color: #f0f0f0;
+    padding: 20px;
+    text-align: center;
+    background-color: transparent;
+    font-weight: bold; 
+    font-size: 30px; 
+    
+  }
+  
+  nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  nav li {
+    margin-right: 20px;
+  }
+  
+  nav a {
+    text-decoration: none;
+    color: #e3e9dd;
+  }
+  
+  nav a:hover {
+    color: #23527c;
+    
+  }
+  
+  main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    
+  }
+  
+  .error {
+    color: red;
+  }
+  .success {
+    color: green;
+  }
+  
+  #contact {
+    width: 80%;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: rgb(65, 185, 185);
+  }
+  
+  #contact-form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  #contact-form label {
+    margin-bottom: 10px;
+  }
+  
+  #contact-form input {
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+  }
+  
+  #contact-form button[type="submit"] {
+    background-color: #337ab7;
+    color: #28db79;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+  
+  #contact-form button[type="submit"]:hover {
+    background-color: #23527c;
+  }
+  
+  #form-response {
+    margin-top: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #f0f0f0;
+  }

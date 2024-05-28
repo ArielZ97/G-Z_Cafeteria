@@ -1,0 +1,125 @@
+body {
+    background-image: url('Imagenes/fondo.png');
+    background-size: cover;
+    font-family: Arial, sans-serif;
+    margin: 0px;
+    padding: 0px;
+  }
+  header {
+    background-color: #f0f0f0;
+    padding: 20px;
+    text-align: center;
+    background-color: transparent;
+    font-weight: bold; 
+    font-size: 30px; 
+    
+  }
+  .black-header {
+    background-color: rgb(24, 27, 25);
+    padding: 20px;
+  }
+  
+
+  nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  nav li {
+    margin-right: 20px;
+  }
+  
+  nav a {
+    text-decoration: none;
+    color: #e3e9dd;
+  }
+  
+  nav a:hover {
+    color: #23527c;
+    
+  }
+
+  h1 {
+    text-align: center;
+    font-style: italic; 
+    font-family: Arial, sans-serif;
+    color: #f00909;
+    margin: 20px 0; 
+    font-size: 44px;
+}
+  
+
+
+.contenedor {
+    position: relative;
+    width: 80%;
+    margin: 50px auto;
+    background-color: transparent;
+    
+}
+
+.imagenes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.imagenes img {
+    max-width: 30%;
+    margin: 0 10px;
+    transition: transform 0.5s ease-in-out;
+}
+
+.flecha {
+    background: none;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 50px;
+    height: 50px;
+}
+
+
+
+.flecha-izquierda {
+    left: -60px; 
+    cursor: pointer; 
+    transition: background-color 0.10s;
+    font-size: 34px;
+    color: #f0e109;
+    
+}
+.flecha-izquierda:hover {
+  background-color: rgba(31, 177, 235, 0.8); 
+}
+
+.flecha-derecha {
+    right: -60px; 
+    cursor: pointer; 
+    transition: background-color 0.10s;
+    font-size: 34px;
+    color: #c6f009;
+    
+}
+.flecha-derecha:hover {
+  background-color: rgba(31, 177, 235, 0.8); 
+  
+}
+
+.cont {
+    width: 100%;
+    max-height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 0 80px rgba(2, 2, 2, 1.1);
+}
+
+
+.imagenes img:hover {
+    transform: scale(0.85);
+}
